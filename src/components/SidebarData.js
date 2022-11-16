@@ -47,6 +47,24 @@ export const SidebarData = [
         ]
     },
     {
+        title: 'Linear Algebra',
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Cramer\'s Rule',
+                path: '/linearalgebra/cramerrule',
+                icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: 'Test Cramer\'s Rule',
+                path: '/linearalgebra/testcramerrule',
+                icon: <IoIcons.IoIosPaper />,
+            },
+        ]
+    },
+    {
         title: 'Products',
         path: '/products',
         icons: <FaIcons.FaCartPlus />

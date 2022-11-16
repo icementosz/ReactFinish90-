@@ -1,7 +1,8 @@
 import { compile } from 'mathjs';
 import React , {useState} from 'react'
 import DataTable from 'react-data-table-component';
-import './basicform.css';
+import ROECSS from './Rootofequationcss.module.css';
+
 var dataintable=[];
 const Bisection = () => {
     const columns = [
@@ -81,40 +82,40 @@ const Bisection = () => {
     }
     return(
         <form>
-            <div class="head">
+            <div className={ROECSS.head}>
                 <h1>Bisection</h1>
             </div>
-            <div class="container">
-                <div class="headform">
-                    <div class="form-group">
+            <div className={ROECSS.container}>
+                <div className={ROECSS.headform}>
+                    <div className={ROECSS.formgroup}>
                         <span class="detail">Equation</span>
                         <input type="text" placeholder="Enter the equation" onChange={(e)=> setdatabisection({...databisection, fx: e.target.value})}></input>
                     </div>
-                    <div class="row">
-                        <div class="form-group">
+                    <div className={ROECSS.row}>
+                        <div className={ROECSS.formgroup}>
                             <span class="detail">XL</span>
                             <input type="number" name="xl" placeholder="Enter The XL Value" onChange={(e)=> setdatabisection({...databisection, xl: e.target.value})}></input>
                         </div>
-                        <div class="form-group">
+                        <div className={ROECSS.formgroup}>
                             <span class="detail">XR</span>
                             <input type="number" name="xr" placeholder="Enter The XR Value" onChange={(e)=> setdatabisection({...databisection, xr: e.target.value})}></input>
                         </div>
                     </div>
-                    <div class="row1">
+                    <div className={ROECSS.row1}>
                         <button type="button" onClick={bisection} >
                             Calculate
                         </button>
                     </div>
-                    {showresult &&<div>
+                    {showresult &&<div className={ROECSS.row2}>
                         Answer is {result}
                     </div>}
                 </div>
             </div>
-            {showresult &&<div class="container1">
-                <DataTable columns={columns} data={dataintable} pagination paginationRowsPerPageOptions={[5]}/>
+            {showresult &&<div className={ROECSS.container1}>
+                <DataTable columns={columns} data={dataintable} pagination paginationPerPage={5} paginationRowsPerPageOptions={[5,10]}/>
             </div>}
-            <div class="container1">
-                    wait graphhhh
+            <div className={ROECSS.container1}>
+                    <canvas />
             </div>
         </form>
     )
