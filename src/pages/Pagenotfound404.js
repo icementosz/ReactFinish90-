@@ -1,8 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Pagenotfound404 = () => {
   return (
-    <div>404 Page not found</div>
+    <div>
+      <Helmet>
+        <title>404</title>
+      </Helmet>
+      <div>404 Page not found</div>
+      /</div>
   )
 }
 

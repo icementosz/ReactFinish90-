@@ -1,5 +1,4 @@
 import React from 'react'
-import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import * as IoIcons from 'react-icons/io'
 import * as RiIcons from 'react-icons/ri'
@@ -12,13 +11,8 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Users',
-                path: '/overview/users',
-                icon: <IoIcons.IoIosPaper />,
-            },
-            {
-                title: 'Revenue',
-                path: '/overview/revenue',
+                title: 'Home',
+                path: '/overview/home',
                 icon: <IoIcons.IoIosPaper />,
             },
         ]
@@ -40,8 +34,18 @@ export const SidebarData = [
                 icon: <IoIcons.IoIosPaper />,
             },
             {
-                title: 'One-Point Iteration',
+                title: 'One-Point',
                 path: 'rootsofequation/onepoint',
+                icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: 'Newton Raphson',
+                path: 'rootsofequation/newtonraphson',
+                icon: <IoIcons.IoIosPaper />,
+            },
+            {
+                title: 'Secant',
+                path: 'rootsofequation/secant',
                 icon: <IoIcons.IoIosPaper />,
             },
         ]
@@ -64,9 +68,9 @@ export const SidebarData = [
             },
         ]
     },
-    {
-        title: 'Products',
-        path: '/products',
-        icons: <FaIcons.FaCartPlus />
-    }
+    // {
+    //     title: 'Products',
+    //     path: '/products',
+    //     icons: <FaIcons.FaCartPlus />
+    // }
 ];

@@ -37,6 +37,7 @@ input{
   flex-basis: 40%;
 }
 
+
 .row1{
   margin-top: 25px;
   justify-content: center;
@@ -46,6 +47,10 @@ input{
 
 .row2{
   margin-top:25px;
+}
+
+.row3{
+  margin-top:10px;
 }
   
 button{

@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-export function useSomeState(someParam) {
-  const [someState, setSomeState] = useState([]);
-
-  useEffect(() => {
-    // do some state logic here if you want
-  });
-
-  return { someState, setSomeState };
+const teststate = props => {
+  return (
+    <div>teststate</div>
+  )
 }
+
+teststate.propTypes = {}
+
+export default teststate
