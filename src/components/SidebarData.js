@@ -66,6 +66,37 @@ export const SidebarData = [
                 path: '/linearalgebra/testcramerrule',
                 icon: <IoIcons.IoIosPaper />,
             },
+            {
+                title: 'Gauss Elimination',
+                path: '/linearalgebra/gausselimination',
+                icon: <IoIcons.IoIosPaper />,
+            },
+        ]
+    },
+    {
+        title: 'Interpolation',
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Lagrange',
+                path: '/interpolation/lagrange',
+                icon: <IoIcons.IoIosPaper />,
+            },
+        ]
+    },
+    {
+        title: 'Regression',
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Regression',
+                path: '/leastsquaresregression/regression',
+                icon: <IoIcons.IoIosPaper />,
+            },
         ]
     },
     // {

@@ -11,6 +11,9 @@ import NewtonRaphson from './pages/RootofEquation/NewtonRaphson';
 import Secant from './pages/RootofEquation/Secant';
 import CramerRule from './pages/LinearAlgebra/CramerRule';
 import TestCramerRule from './pages/LinearAlgebra/TestCramerRule';
+import GaussElimination from './pages/LinearAlgebra/GaussElimination';
+import Lagrange from './pages/Interpolation/Lagrange';
+import Regression from './pages/LeastSquaresRegression/Regression';
 function App() {
   return (
     <Router>
@@ -27,6 +30,9 @@ function App() {
         <Route exact path="/rootsofequation/secant" element={<Secant/>}/>
         <Route exact path="/linearalgebra/cramerrule" element={<CramerRule/>}/>
         <Route exact path="/linearalgebra/testcramerrule" element={<TestCramerRule/>}/>
+        <Route exact path="/linearalgebra/gausselimination" element={<GaussElimination/>}/>
+        <Route exact path="/interpolation/lagrange" element={<Lagrange/>}/>
+        <Route exact path="/leastsquaresregression/regression" element={<Regression/>}/>
         
       </Routes>
     </Router>
